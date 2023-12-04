@@ -143,7 +143,7 @@ public class Test01 {
     public void test07() {
         ProcessEngine engine = ProcessEngines.getDefaultProcessEngine();
         TaskService taskService = engine.getTaskService();
-        Task task = taskService.createTaskQuery().processDefinitionKey(EVECTION).taskAssignee("lisi").singleResult();
+        Task task = taskService.createTaskQuery().processDefinitionKey(EVECTION).taskAssignee("zhangsan").singleResult();
         // 完成任务
         taskService.complete(task.getId());
     }
